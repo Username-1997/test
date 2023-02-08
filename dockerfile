@@ -1,6 +1,6 @@
 #base image
 FROM openjdk:8
-COPY . /home/indium/manisha/java
-WORKDIR /home/indium/manisha/java
+COPY . /var/lib/jenkins/workspace/jenkins Docker intergration/
+WORKDIR /var/lib/jenkins/workspace/jenkins Docker intergration/
 RUN javac JavaExample.java
 CMD ["java","JavaExample"]
